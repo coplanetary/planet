@@ -6,7 +6,7 @@ RUN bash ./crosscompile_db-init.sh armv7 install
 
 #####
 
-FROM hypriot/rpi-node:6.10.0-alpine
+FROM treehouses/node
 
 RUN apk update ;\
     apk add --no-cache bash curl git jq ca-certificates;\
